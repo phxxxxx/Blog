@@ -1,6 +1,6 @@
 ---
 title: about
-type："about"
-date: 2020-02-23 20:52:37
+date: 2020-02-24 22:53:59
+type: "about"
 comments: false
 ---
