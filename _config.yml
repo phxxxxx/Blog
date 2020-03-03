@@ -100,6 +100,7 @@ theme: hexo-theme-next
 deploy:
   type: git
   #repo改为repo: git@你的域名:/var/repo/hexo.git
-  repo: git@101.37.71.31:/var/repo/hexo.git
+  repo: ssh://git@101.37.71.31:3862/var/repo/hexo.git
   branch: master
+ 
 

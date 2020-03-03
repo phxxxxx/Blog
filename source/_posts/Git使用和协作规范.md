@@ -119,6 +119,34 @@ Git鼓励大量使用分支：
 
 ------
 
+具体详细步骤参照  [Click here](https://segmentfault.com/a/1190000015798490)
+
+#### 步骤1：从GitHub上克隆项目，创建分支到本地
+
+同样输入命令
+`git clone git@github.com:phxxxxx/TARS_HERO.git`
+
+输入给git branch后你会发现并没有所有的分支，所以要`创建远程仓库的分支到本地`
+比如我是Bob，输入命令
+`git checkout -b Bob origin/Bob`
+这样就可以在自己的分支上进行项目了
+
+#### 步骤2：参与修改项目
+
+举个实践的例子，在test目录下创建一个文本吧，随便写什么，我弄了Hello.txt
+接下来跟正常步骤一样，提交分支
+`git add Hello.txt`
+`git commit -m"提交Hello.txt"`
+
+然后把分支合并到master上（开发中一般是dev作为开发线，master作为主版本，这里就简化吧）
+`git checkout master`
+`git merge --no-ff -m"写合并分支的commit" Bob`
+以上步骤先切换到master，再把Bob分支合并到master，并且不删除Bob分支
+
+接下来推送master到远程仓库（当然也可以把自己的分支推送上去）
+`git push origin master`
+`git push origin Bob`
+
 
 
 
